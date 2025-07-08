@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -82,7 +83,7 @@ header .bnt button:hover {
 }
 
 header .bnt button:active {
-    transform: scale(0.9);
+    transform: scale(0.5);
 }
 
 /* heder */
@@ -132,14 +133,15 @@ main .home span {
     display: block;
     color: #fff; 
     width: 100vw;
-    height: 100vh;
+    height: 99vh;
     background: #222;
-    padding: 5% 10%;
+    padding: 3% 6% 5%;
 }
 
 .sobre h2 {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 8%;
@@ -153,16 +155,186 @@ main .home span {
 .sobre .main-sobre {
     display: flex;
     align-items: center;
-    gap: 8%;
+    gap: 10%;
 }
 
 .sobre .texto-sobre {
     max-width: 50%;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 .sobre img {
     max-width: 50%;
+    border-radius: 20px;
 }
 
+/* galeria */
+
+.sobre-galeria {
+    height: 92vh;
+    background: #FFA500;
+    color: #333;
+    padding: 3% 0;
+}
+
+.sobre-galeria h2 {
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.sobre-galeria h2 span {
+    color: #fff;
+    margin: 0 auto;
+}
+
+.sobre-galeria-img  {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 18%;
+}
+
+.sobre-galeria-img img {  
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+/* galeria */
+
 /* sobre */
+
+/* serviços */
+
+.serviços .title h2 {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 2% 2% 8%;
+}
+
+.serviços .title h2 span {
+    color: #ffa500;
+    margin: 0 auto;
+}
+
+.area-serviços {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    background-color: #333;
+    height: 35vh;
+    position: relative;
+    color: #fff;
+}
+
+.serviços .img-benefit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviços .text-serviços {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviços .img-benefit img {
+    width: 100px;
+    margin-bottom: 2em; 
+}
+
+/* serviços */
+
+/* local */
+
+.local {
+    height: 75vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.local h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 2%;
+    width: 100vw;
+}
+
+.local h2 span {
+    color: #ffa500;
+    margin: 0 auto;
+}
+
+.local iframe {
+    width: 50%;
+    height: 70%;
+}
+
+/* local */
+
+
+
+
+/* roda pé */
+
+.Contatos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #fff;
+    height: 30vh;
+    background: #000;
+    padding: 2% 5%;
+}
+
+.Contatos p {
+    font-size: 150%;
+}
+
+.img-contatos img {
+    border-radius: 50%;
+    width: 10%;
+    margin: 0 10px;
+}
+
+.Contatos .bnt button{
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+
+.Contatos .bnt button:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+}
+
+.Contatos .bnt button:active {
+    transform: scale(0.5);
+}
+
+/* roda pé */
