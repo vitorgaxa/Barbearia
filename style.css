@@ -3,23 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
-html {
-    max-width: 100vw;
-    max-height: 100vh;
-    scroll-behavior: smooth;
+html body {
+    max-width: 100%;
+    height: auto;
     overflow-x: hidden;
 }
 
 main {
     width: 100%;
     height: 100%;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
 }
 
 .interface {
@@ -31,15 +26,17 @@ body {
 
 header {
     width: 100%;
-    padding: 10px 190px;
+    padding: 10px 20px;
     background: #222;
     height: 70px;
 }
 
 header .interface {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -141,10 +138,9 @@ main .home span {
 .sobre {
     display: block;
     color: #fff; 
-    width: 100vw;
+    width: 100%;
     height: 99vh;
     background: #222;
-    padding: 3% 6% 5%;
 }
 
 .sobre h2 {
@@ -164,17 +160,19 @@ main .home span {
 .sobre .main-sobre {
     display: flex;
     align-items: center;
-    gap: 10%;
+    justify-content: center;
+    gap: 2%;
 }
 
 .sobre .texto-sobre {
-    max-width: 50%;
+    max-width: 40%;
     font-size: 150%;
 }
 
 .sobre img {
     max-width: 50%;
     border-radius: 20px;
+    height: auto;
 }
 
 /* galeria */
@@ -240,7 +238,7 @@ main .home span {
     grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
     gap: 30px;
     background-color: #333;
-    max-width: 1200vw;
+    max-width: 100%;
     place-items: center;
     padding: 5%;
     height: 50%;
@@ -370,9 +368,10 @@ main .home span {
 
 /* estilo para celular */
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 950px) {
     .home .interface h1 {
-        font-size: 48px;
+        width: 100%;
+        font-size: 52px;
         line-height: 60px;
     }
 
@@ -388,11 +387,11 @@ main .home span {
     .sobre h2 {
         font-size: 45px;
         width: 90vw;
-        margin-bottom: 15%;
+        margin-bottom: 0;
     }
 
     .sobre h2 span {
-        font-size: 32px;
+        font-size: 35px;
     }
 
     .sobre .main-sobre {
@@ -405,13 +404,11 @@ main .home span {
 
     .sobre .texto-sobre {
         max-width: 80%;
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .sobre img {
-        max-width: 90%;
-        max-height: 40%;
-        width: 800px;
+        width: 100%;
         border-radius: 20px;
     }
 
@@ -429,7 +426,7 @@ main .home span {
     }
 
     .sobre-galeria h2 span {
-        font-size: 32px;
+        font-size: 35px;
     }
 
     .sobre-galeria-img  {
@@ -448,9 +445,33 @@ main .home span {
     }
 
     .area-serviços {
-        grid-template-columns: minmax(200px, 1fr);
+        grid-template-columns: 1fr;
         row-gap: 100px;
         padding: 5% 5% 8% 5%;
+    }
+
+    .serviços .title h2 {
+        font-size: 45px;
+    }
+
+    .serviços .title h2 span {
+        font-size: 35px;
+    }
+
+    .serviços .area-benefit {
+        width: 100%;
+        height: 100%;
+    }
+
+    .serviços .area-benefit img {
+        max-width: 200px;
+    }
+
+    .serviços .text-serviços {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
     }
 
     .local h2 {
@@ -459,6 +480,7 @@ main .home span {
 
     .local iframe {
         width: 80%;
+        height: 100%;
     }
 
     .Contatos {
